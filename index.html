@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City Weather</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="search">
-          <input type="text" name="search" id="search" placeholder="Search Location">
+          <input type="text" name="search" id="Location" placeholder="Search Location">
           <button class="search-btn" type="sumbit"><img src="images/search.png" alt=""></button>
         </div>
         <div class="button-group">
@@ -34,9 +35,20 @@
             </button>
           </div>
         </div>
-
+      </div>
     </nav>
   </header>
+  <div class="main">
+    <div class="container">
+      <div class="current_weather"></div>
+      <div class="air Qulity"></div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+      <div class="visbility"></div>
+      <div class="pressure"></div>
+      <div class="dew-point"></div>
+    </div>
+  </div>
 </body>
 
 </html>
