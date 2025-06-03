@@ -155,63 +155,76 @@ body {
   }
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.container {
-  margin-top: 20px;
-  width: 90%;
-  height: 500px;
-  background-color: white;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-
-  box-shadow:
-    rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px,
-    rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px,
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.weather-container {
-    background-color: white;
+.main-content {
     padding: 20px;
+}
+
+.current-weather {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #1e2d44;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.weather-info {
+    flex: 1;
+}
+
+.weather-info h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.weather-map img {
+    width: 300px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
 }
 
-.current_weather,
-.air_quality,
-.wind,
-.humidity,
-.visibility,
-.pressure,
-.dew_point {
+.forecast h2 {
+    margin-bottom: 15px;
+}
+
+.forecast-cards {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #263b5e;
+    border-radius: 10px;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #f4f4f4;
     text-align: center;
-    font-size: 16px;
-    font-weight: bold;
+    width: 100px;
+    min-width: 100px;
+    flex-shrink: 0;
 }
 
-.current_weather { color: #FF5733; }
-.air_quality { color: #33C3FF; }
-.wind { color: #2ECC71; }
-.humidity { color: #FFD700; }
-.visibility { color: #800080; }
-.pressure { color: #FF4500; }
-.dew_point { color: #4682B4; }
+.card img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #182d4f;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
